@@ -9,9 +9,7 @@ module.exports = {
         'cursive': ['Dancing Script', 'cursive'],
       },
 
-      backgroundImage: {
-        'skills-image': "url(images/skills-bg.jpg)",
-      }
+      
     },
   },
   plugins: [],
