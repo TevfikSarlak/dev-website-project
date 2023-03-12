@@ -10,7 +10,7 @@ function navToggle() {
 }
 
 var typed = new Typed(".mov",{
-    strings: [,  "Mathematician","Software Developer","Blockchain Enthusiast"] ,
+    strings: [,  "Mathematician","Software Developer","Blockchain Enthusiast","lifelong learner","interested in Cryptography"] ,
     typeSpeed: 60,
     backSpeed: 60,
     loop: true
