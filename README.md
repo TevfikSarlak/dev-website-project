@@ -3,7 +3,7 @@
 Developer Website Project
 This is a website project for developers who want to showcase their skills, experience, and projects. The website is built using HTML, CSS, and JavaScript, and is designed to be responsive and mobile-friendly.
 Table of Contents
-•	Installation /n
+•	Installation 
 •	Usage
 •	Features
 •	Contributing
