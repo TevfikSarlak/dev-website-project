@@ -1,6 +1,7 @@
 # dev-website-project
 
-[https://tevfikdev.dev/]('https://tevfikdev.dev/')
+<p><a href="https://tevfikdev.dev/">Developer Website Project</a></p>
+
 
 Developer Website Project
 
