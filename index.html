@@ -13,15 +13,15 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Developer Website</title>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 max-w-sm">
     <!-- Hero Section -->
     <section id="home">
-    <div class="bg-gradient-to-t from-gray-50 to-gray-400 flex flex-col  ">
+    <div class="bg-[url('/images/intro.svg')] bg-cover bg-center flex flex-col  ">
         <!-- Navbar -->
-        <nav class="bg-white flex flex-row px-2 justify-between top-0 pt-4 h-16 md:flex-row md:justify-between">
+        <nav class="bg-white flex flex-row px-2 justify-between top-0 pt-4 h-16 md:flex-row md:justify-between shadow-lg">
             <h1 class="font-sans font-bold">Tevfik Şarlak</h1>
             <!-- Menu -->
-            <div class="hidden h-10 font-sans font-semibold md:flex md:space-x-8 md:justify-end">
+            <div class="hidden h-10 text-slate-600 font-sans font-semibold md:flex md:space-x-8 md:justify-end">
                 <div class="group">
                   <a href="#home">Home</a>
                   <div
@@ -83,16 +83,16 @@
         </div>
         
         <!-- Text -->
-        <div class="mt-24 px-8 text-left font-sans md:px-24">
-            <div class="text-6xl font-bold mb-6">
+        <div class="mt-24 px-8 text-left text-slate-700 font-sans md:px-24">
+            <div class="text-6xl md:text-8xl font-bold mb-6">
                 Hey,
             </div>
 
-            <div class="text-lg font-semibold py-4">
+            <div class="text-lg md:text-4xl text-slate-600 font-semibold py-4">
                 I am Tevfik and this is my page.
             </div>
 
-            <div class="text-md font-semibold pb-72">
+            <div class="text-md md:text-2xl font-semibold pb-72">
                 I am  <span class="mov"> </span>
             </div>  
         </div>
@@ -100,12 +100,12 @@
    </section>
 
    <!-- About Section -->
-   <section id="about" class="bg-[url('/images/bg-three.svg')] bg-cover">
+   <section id="about" class="bg-[url('/images/bg-three.svg')] bg-cover bg-center">
     
        
       <div class="flex flex-col justify-center items-center text-left py-12">
         
-           <div class="text-2xl font-bold mx-auto underline pb-2">
+           <div class="text-2xl font-bold mx-auto underline text-slate-700 pb-2">
                About Me
            </div>
 
@@ -132,13 +132,13 @@
    </section>
 
    <!-- Skills Section-->
-   <section id="skills" class="bg-[url('/images/bg-one.svg')] bg-cover mb-24">
+   <section id="skills" class="bg-[url('/images/bg-one.svg')] bg-cover bg-center pb-48">
     <div class="flex flex-col mx-auto justify-center items-center py-12 space-y-6 md:grid md:grid-cols-2 md:px-8">
   
 
            <!-- Skills -->
            <div class="space-y-4 md:mt-12">
-            <h1 class="underline text-2xl font-bold mb-12 text-center">Skills</h1>
+            <h1 class="underline text-2xl font-bold mb-12 text-slate-700 text-center">Skills</h1>
 
                <!-- Logos -->
              <div class="grid grid-cols-2 justify-between space-x-6 mx-8 space-y-4 md:grid-cols-4 md:px-8 text-gray-600">
@@ -188,7 +188,7 @@
           </div>
            <!-- Skills To Learn -->
            <div class="space-y-4 md:mt-12">
-            <h1 class="underline text-2xl font-bold mb-12 text-center">Skills to Learn</h1>
+            <h1 class="underline text-2xl font-bold mb-12 text-slate-700 text-center">Skills to Learn</h1>
 
              <!-- Logos -->
              <div class="grid grid-cols-2 justify-between space-x-6 mx-8 space-y-4 md:grid-cols-4 md:px-8 text-gray-600">
@@ -222,30 +222,238 @@
     </section>
     
     <!-- Projects -->
-    <section id="projects" class="">
-      <div class="flex flex-col justify-center items-center mb-80 mt-80">
-        <h1 class="text-center underline font-bold text-2xl mb-12">Projects</h1>
+    <section id="projects" class="bg-[url('/images/bg-four.svg')] bg-cover bg-center">
+      <div class="flex flex-col justify-center items-center mb-80 mt-40">
+        <h1 class="text-center underline font-bold text-2xl mb-12 text-slate-700 ">Projects</h1>
         
         <!-- Cards Container -->
-        <div class="md:grid md:grid-cols-2">
-          <div class="bg-cyan-50 rounded-lg shadow-xl p-6 leading-loose mb-12 mx-4">
-            <h2 class="text-lg font-medium mb-4">Dev-Website-Projects</h2>
-            <p class="text-gray-600">"Dynamic and responsive developer website."</p>
-            <a href="" class="underline text-blue-600 "
-            >www.tevfikdev.dev</a>
-            <p class="text-gray-600">Tags: HTML5, CSS, Tailwindcss</p>
+        <div class="md:grid md:grid-cols-2 gap-6">
+          <!--Project1-->
+          <div class="bg-slate-100 rounded-lg shadow-xl w-96  mb-12  hover:scale-105">
+            <img src="/images/my-weekly-planner.PNG" class="mt-1 rounded-t-md"/>
+            <div class="mx-2 leading-loose p-6 ">
+              <h2 class="text-lg font-medium mb-4">My-Weekly-Planner-App</h2>
+              
+              <p class="text-gray-600"><span class="underline">Description:</span>
+                My Week Calendar is a simple and easy-to-use web application for planning your week
+
+                <span id="dots-one">...</span>
+
+                <span id="readmore-one" class="">
+                  <button id="btn-readmore-one" onclick="ToggleTextOne()" class="text-sky-600 underline">Read more</button>
+                </span>
+
+                <span id="moretext-one" class="hidden"> It allows you to add, delete, and check off tasks, 
+                  as well as take notes and save your progress. The calendar starts on Monday to help 
+                  you plan out your workweek. My Week Calendar was built with ReactJS and styled using Tailwind CSS.
+                </span>
+              </p>
+
+              <span >
+                <button id="btn-readless-one" onclick="ToggleTextOne()" class="hidden text-sky-600 underline ">Read less</button>
+              </span>
+
+              <div class="mt-4 mb-4 flex justify-between items-center"> 
+                <button>
+                  <a href="https://www.myweek.site/" target="_blank" class="bg-indigo-700 px-12 py-1 rounded-md text-white
+                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
+                  >See Site</a>
+                </button> 
+
+                <button>
+                  <a href="https://github.com/TevfikSarlak/my-weekly-planner-app" target="_blank" class="bg-indigo-700 px-12 py-1 rounded-md text-white
+                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
+                  >Source</a>
+                </button> 
+              </div>
+
+              <p class="text-gray-600 text-xs">Tags: HTML5, CSS, Tailwindcss, ReactJS</p>
+            </div>
+             
           </div>
 
-          <div class="bg-cyan-50 rounded-lg shadow-xl p-6 leading-loose mb-12 mx-4">
-            <h2 class="text-lg font-medium mb-4">Password-Generator</h2>
-            <p class="text-gray-600">"Useful password randomizer"</p>
-            <a href="https://mypasswordrandomizer.netlify.app/" class="underline text-blue-600 "
-            >www.mypasswordrandomizer.netfily.app</a>
-            <p class="text-gray-600">Tags: HTML5, CSS, Bootstrap, JavaScript</p>
+          <!--Project2-->
+          <div class="bg-slate-100 rounded-lg shadow-xl w-96  mb-12  hover:scale-105">
+            <img src="/images/dev-interview-preparation-app.PNG" class="mt-1 rounded-t-md"/>
+            <div class="mx-2 leading-loose p-6 ">
+              <h2 class="text-lg font-medium mb-4">Dev-Interview-Preparation-App</h2>
+              
+              <p class="text-gray-600"><span class="underline">Description:</span>
+                The Developer Interview Preparation App is a web application designed to help 
+
+                <span id="dots-two">...</span>
+
+                <span>
+                  <button id="btn-readmore-two" onclick="ToggleTextTwo()" class="text-sky-600 underline">Read more</button>
+                </span>
+
+                <span id="moretext-two" class="hidden"> aspiring developers prepare for their interviews by providing questions and resources related to 
+                  HTML, CSS, JavaScript, and ReactJS questions. The app allows users to choose between
+                   classical question and multiple choice questions, and also allows them to select the number
+                    of questions they want to attempt.
+                </span>
+              </p>
+
+              <span id="readless" >
+                <button id="btn-readless-two" onclick="ToggleTextTwo()" class="hidden text-sky-600 underline ">Read less</button>
+              </span>
+
+              <div class="mt-4 mb-4 flex justify-between items-center"> 
+                <button>
+                  <a href="https://practodev.vercel.app/" target="_blank" class="bg-indigo-700 px-12 py-1 rounded-md text-white
+                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
+                  >See Site</a>
+                </button> 
+
+                <button>
+                  <a href="https://github.com/TevfikSarlak/developer-interview-preparation-app" target="_blank"
+                   class="bg-indigo-700 px-12 py-1 rounded-md text-white
+                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
+                  >Source</a>
+                </button> 
+              </div>
+
+              <p class="text-gray-600 text-xs">Tags: HTML5, CSS, Tailwindcss, ReactJS</p>
+            </div>
+             
           </div>
+
+          <!--Project3-->
+          <div class="bg-slate-100 rounded-lg shadow-xl w-96  mb-12  hover:scale-105">
+            <img src="/images/my-password-randomizer.PNG" class="mt-1 rounded-t-md"/>
+            <div class="mx-2 leading-loose p-6 ">
+              <h2 class="text-lg font-medium mb-4">My-Password-Randomizer</h2>
+              
+              <p class="text-gray-600"><span class="underline">Description:</span>
+                This is a simple password generator web application that allows users 
+
+                <span id="dots-three">...</span>
+
+                <span>
+                  <button id="btn-readmore-three" onclick="ToggleTextThree()" class="text-sky-600 underline">Read more</button>
+                </span>
+
+                <span id="moretext-three" class="hidden"> to create a password with a custom length and set of characters.
+                  Users can choose the length of the password, with a minimum of 4 characters and a maximum of 24 characters.
+                  Users can select which types of characters to include in the password, including uppercase letters, lowercase
+                  letters, symbols, and numbers.
+                </span>
+              </p>
+
+              <span  >
+                <button id="btn-readless-three" onclick="ToggleTextThree()" class="hidden text-sky-600 underline ">Read less</button>
+              </span>
+
+              <div class="mt-4 mb-4 flex justify-between items-center"> 
+                <button>
+                  <a href="https://passwordrandomizer.vercel.app/" target="_blank" class="bg-indigo-700 px-12 py-1 rounded-md text-white
+                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
+                  >See Site</a>
+                </button> 
+
+                <button>
+                  <a href="https://github.com/TevfikSarlak/my-password-generator" target="_blank"
+                   class="bg-indigo-700 px-12 py-1 rounded-md text-white
+                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
+                  >Source</a>
+                </button> 
+              </div>
+
+              <p class="text-gray-600 text-xs">Tags: HTML5, CSS, Tailwindcss</p>
+            </div>
+             
+          </div>
+
+          <!--Project4-->
+          <div class="bg-slate-100 rounded-lg shadow-xl w-96  mb-12  hover:scale-105">
+            <img src="/images/designer-website.PNG" class="mt-1 rounded-t-md"/>
+            <div class="mx-2 leading-loose p-6 ">
+              <h2 class="text-lg font-medium mb-4">Designer-Website</h2>
+              
+              <p class="text-gray-600"><span class="underline">Description:</span>
+                This is an open-source project for a boat and yacht designer website. It includes 
+
+                <span id="dots-four">...</span>
+
+                <span>
+                  <button id="btn-readmore-four" onclick="ToggleTextFour()" class="text-sky-600 underline">Read more</button>
+                </span>
+
+                <span id="moretext-four" class="hidden"> information about the designer, their portfolio,
+                   and a section for visitors to contact the designer.  To use this project, simply clone the repository 
+                  and update the information in the About section and the portfolio with your own information. 
+                  You can also customize the design by modifying the Tailwind CSS styles.
+                </span>
+              </p>
+
+              <span  >
+                <button id="btn-readless-four" onclick="ToggleTextFour()" class="hidden text-sky-600 underline ">Read less</button>
+              </span>
+
+              <div class="mt-4 mb-4 flex justify-between items-center"> 
+                <button>
+                  <a href="https://hookdesignbeta.netlify.app/" target="_blank" class="bg-indigo-700 px-12 py-1 rounded-md text-white
+                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
+                  >See Site</a>
+                </button> 
+
+                <button>
+                  <a href="https://github.com/TevfikSarlak/designer-website" target="_blank"
+                   class="bg-indigo-700 px-12 py-1 rounded-md text-white
+                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
+                  >Source</a>
+                </button> 
+              </div>
+
+              <p class="text-gray-600 text-xs">Tags: HTML5, CSS, Tailwindcss, ReactJS</p>
+            </div>
+             
+          </div>
+
+          <!--Project5-->
+          <div class="bg-slate-100 rounded-lg shadow-xl w-96  mb-12  hover:scale-105">
+            <img src="/images/dev-website.PNG" class="mt-1 rounded-t-md"/>
+            <div class="mx-2 leading-loose p-6 ">
+              <h2 class="text-lg font-medium mb-4">Dev-Portfolio-Website</h2>
+              
+              <p class="text-gray-600"><span class="underline">Description:</span>
+                This is a website project for developers who want to showcase their 
+
+                <span id="dots-five">...</span>
+
+                <span>
+                  <button id="btn-readmore-five" onclick="ToggleTextFive()" class="text-sky-600 underline">Read more</button>
+                </span>
+
+                <span id="moretext-five" class="hidden"> skills, experience, and projects. The website is built using HTML,
+                   CSS, and JavaScript, and is designed to be responsive and mobile-friendly. 
+              </p>
+
+              <span>
+                <button id="btn-readless-five" onclick="ToggleTextFive()" class="hidden text-sky-600 underline ">Read less</button>
+              </span>
+
+              <div class="mt-4 mb-4 flex justify-between items-center"> 
+                <button>
+                  <a href="https://tevfikdev.dev/" target="_blank" class="bg-indigo-700 px-12 py-1 rounded-md text-white
+                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
+                  >See Site</a>
+                </button> 
+
+                <button>
+                  <a href="https://github.com/TevfikSarlak/dev-website-project" target="_blank"
+                   class="bg-indigo-700 px-12 py-1 rounded-md text-white
+                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
+                  >Source</a>
+                </button> 
+              </div>
+
+              <p class="text-gray-600 text-xs">Tags: HTML5, CSS, Tailwindcss</p>
+            </div>
+             
+          </div>
+
         </div>
-
-        <p class="text-center">...more and more is coming soon...</p>
         
       </div>
 
@@ -256,7 +464,7 @@
 
       <div class="mb-60 py-24 md:flex md:flex-col md:justify-center md:mx-72">
 
-        <h1 class="text-center underline font-bold text-2xl mb-12">Contact Me</h1>
+        <h1 class="text-center underline font-bold text-2xl mb-12 text-slate-700">Contact Me</h1>
 
         <form name="contact" method="POST" data-netfily="true" action="https://formspree.io/f/mrgvlldn" class="mx-4">
           <input type="hidden" name="form-name" value="contact">
