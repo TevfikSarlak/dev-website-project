@@ -627,10 +627,6 @@ video {
   margin-top: 1rem;
 }
 
-.mt-80 {
-  margin-top: 20rem;
-}
-
 .mt-40 {
   margin-top: 10rem;
 }
@@ -691,8 +687,16 @@ video {
   width: 100%;
 }
 
-.max-w-sm {
-  max-width: 24rem;
+.w-72 {
+  width: 18rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .grid-cols-2 {
@@ -711,10 +715,6 @@ video {
   flex-wrap: wrap;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -725,6 +725,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-6 {
@@ -769,6 +773,10 @@ video {
 
 .self-end {
   align-self: flex-end;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -931,12 +939,12 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pb-48 {
+  padding-bottom: 12rem;
 }
 
 .pb-72 {
@@ -957,42 +965,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
-.pb-36 {
-  padding-bottom: 9rem;
-}
-
-.pb-40 {
-  padding-bottom: 10rem;
-}
-
-.pb-48 {
-  padding-bottom: 12rem;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
 }
 
 .text-left {
@@ -1020,11 +992,6 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-xs {
@@ -1179,6 +1146,12 @@ video {
   opacity: 0.5;
 }
 
+@media only screen and (max-width: 320px) {
+  #projects {
+    margin: 0 10px;
+  }
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1277,6 +1250,13 @@ video {
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:mx-72 {
     margin-left: 18rem;
@@ -1301,6 +1281,10 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
   }
 
   .md\:max-w-2xl {
@@ -1359,6 +1343,11 @@ video {
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .md\:text-2xl {
