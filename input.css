@@ -52,6 +52,7 @@
 
 .group:hover .text {
   opacity: 1;
+  text-align: center;
 }
 
 .group:hover .img {
@@ -59,7 +60,8 @@
 }
 
 @media only screen and (max-width: 320px) {
-  #projects {
+  .body {
     margin: 0 10px;
+    overflow-x: hidden;
   }
 }
