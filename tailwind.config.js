@@ -5,8 +5,8 @@ module.exports = {
     extend: {
 
       fontFamily: {
-        'sans': ['Noto Sans', 'sans-serif'],
-        'cursive': ['Dancing Script', 'cursive'],
+        'noto': ['Noto Sans', 'sans-serif'],
+        'cursive': ['Sacramento', 'cursive'],
       },
 
       

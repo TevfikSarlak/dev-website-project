@@ -7,7 +7,26 @@ function navToggle() {
   btn.classList.toggle('open')
   menu.classList.toggle('flex')
   menu.classList.toggle('hidden')
+
+  // add event listener to close menu when a link is clicked
+  const links = menu.querySelectorAll('a')
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden')
+      menu.classList.remove('flex')
+      btn.classList.remove('open')
+    })
+  })
+
+  // add event listener to close menu on medium and larger screens
+  const mq = window.matchMedia('(min-width: 768px)')
+  if (mq.matches) {
+    menu.classList.add('hidden')
+    menu.classList.remove('flex')
+    btn.classList.remove('open')
+  }
 }
+
 
 var typed = new Typed(".mov",{
     strings: [,  "Mathematician","Software Developer","Blockchain Enthusiast","lifelong learner",
