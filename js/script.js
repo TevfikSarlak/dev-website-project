@@ -141,5 +141,27 @@ var typed = new Typed(".mov",{
         buttonReadless.classList.add("hidden");
       }
     }
+
+    function ToggleTextSix() {
+      let dots = document.getElementById("dots-six");
+      let moreText = document.getElementById("moretext-six");
+      let buttonReadmore = document.getElementById("btn-readmore-six");
+      let buttonReadless = document.getElementById("btn-readless-six");
+    
+      if (!dots.classList.contains("hidden")) {
+        dots.classList.add("hidden");
+        moreText.classList.remove("hidden");
+        buttonReadmore.classList.add("hidden");
+        buttonReadless.classList.remove("hidden");
+      } else {
+        dots.classList.remove("hidden");
+        moreText.classList.add("hidden");
+        buttonReadmore.classList.remove("hidden");
+        buttonReadless.classList.add("hidden");
+      }
+    }
+    
+
+   
     
     
