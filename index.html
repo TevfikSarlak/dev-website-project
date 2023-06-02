@@ -19,7 +19,7 @@
     <div class="bg-[url('/images/intro.svg')] bg-cover bg-center flex flex-col  ">
         <!-- Navbar -->
         <nav class="bg-white flex flex-row px-2 justify-between top-0 pt-4 h-16 md:flex-row md:justify-between shadow-lg">
-            <h1 class="font-bold">Tevfik Şarlak</h1>
+            <h1 class="font-bold ml-2">Tevfik Şarlak</h1>
             <!-- Menu -->
             <div class="hidden h-10 text-slate-600 font-sans font-semibold md:flex md:space-x-8 md:justify-end">
                 <div class="group">
@@ -257,7 +257,7 @@
                 <span id="dots-one">...</span>
 
                 <span id="readmore-one" class="">
-                  <button id="btn-readmore-one" onclick="ToggleTextOne()" class="text-sky-600 text-sm underline">Read more</button>
+                  <button id="btn-readmore-one" onclick="ToggleText('one')" class="text-sky-600 text-sm underline">Read more</button>
                 </span>
 
                 <span id="moretext-one" class="hidden">for users by utilizing the ingredients available in their refrigerators. With Fridgezy, users can easily
@@ -276,7 +276,7 @@
               </p>
 
               <span >
-                <button id="btn-readless-one" onclick="ToggleTextOne()" class="hidden text-sm  text-sky-600 underline ">Read less</button>
+                <button id="btn-readless-one" onclick="ToggleText('one')" class="hidden text-sm  text-sky-600 underline ">Read less</button>
               </span>
 
               <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
@@ -307,20 +307,20 @@
               <p class="text-gray-600"><span class="underline">Description:</span>
                 My Week Calendar is a simple and easy-to-use web application for planning your week
 
-                <span id="dots-one">...</span>
+                <span id="dots-two">...</span>
 
-                <span id="readmore-one" class="">
-                  <button id="btn-readmore-one" onclick="ToggleTextTwo()" class="text-sky-600 text-sm underline">Read more</button>
+                <span id="readmore-two" class="">
+                  <button id="btn-readmore-two" onclick="ToggleText('two')" class="text-sky-600 text-sm underline">Read more</button>
                 </span>
 
-                <span id="moretext-one" class="hidden"> It allows you to add, delete, and check off tasks, 
+                <span id="moretext-two" class="hidden"> It allows you to add, delete, and check off tasks, 
                   as well as take notes and save your progress. The calendar starts on Monday to help 
                   you plan out your workweek. My Week Calendar was built with ReactJS and styled using Tailwind CSS.
                 </span>
               </p>
 
               <span >
-                <button id="btn-readless-one" onclick="ToggleTextTwo()" class="hidden text-sm  text-sky-600 underline ">Read less</button>
+                <button id="btn-readless-two" onclick="ToggleText('two')" class="hidden text-sm  text-sky-600 underline ">Read less</button>
               </span>
 
               <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
@@ -352,21 +352,21 @@
               <p class="text-gray-600"><span class="underline">Description:</span>
                 The Developer Interview Preparation App is a web application designed to help 
 
-                <span id="dots-two">...</span>
+                <span id="dots-three">...</span>
 
                 <span>
-                  <button id="btn-readmore-two" onclick="ToggleTextThree()" class="text-sky-600 text-sm underline">Read more</button>
+                  <button id="btn-readmore-three" onclick="ToggleText('three')" class="text-sky-600 text-sm underline">Read more</button>
                 </span>
 
-                <span id="moretext-two" class="hidden"> aspiring developers prepare for their interviews by providing questions and resources related to 
+                <span id="moretext-three" class="hidden"> aspiring developers prepare for their interviews by providing questions and resources related to 
                   HTML, CSS, JavaScript, and ReactJS questions. The app allows users to choose between
                    classical question and multiple choice questions, and also allows them to select the number
                     of questions they want to attempt.
                 </span>
               </p>
 
-              <span id="readless" >
-                <button id="btn-readless-two" onclick="ToggleTextThree()" class="hidden text-sky-600 text-sm underline ">Read less</button>
+              <span id="readless-three" >
+                <button id="btn-readless-three" onclick="ToggleTextThree('three')" class="hidden text-sky-600 text-sm underline ">Read less</button>
               </span>
 
               <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
@@ -398,21 +398,21 @@
               <p class="text-gray-600"><span class="underline">Description:</span>
                 This is a simple password generator web application that allows users 
 
-                <span id="dots-three">...</span>
+                <span id="dots-four">...</span>
 
                 <span>
-                  <button id="btn-readmore-three" onclick="ToggleTextFour()" class="text-sky-600 text-sm underline">Read more</button>
+                  <button id="btn-readmore-four" onclick="ToggleText('four')" class="text-sky-600 text-sm underline">Read more</button>
                 </span>
 
-                <span id="moretext-three" class="hidden"> to create a password with a custom length and set of characters.
+                <span id="moretext-four" class="hidden"> to create a password with a custom length and set of characters.
                   Users can choose the length of the password, with a minimum of 4 characters and a maximum of 24 characters.
                   Users can select which types of characters to include in the password, including uppercase letters, lowercase
                   letters, symbols, and numbers.
                 </span>
               </p>
 
-              <span  >
-                <button id="btn-readless-three" onclick="ToggleTextFour()" class="hidden text-sky-600 text-sm underline ">Read less</button>
+              <span id="readless-four" >
+                <button id="btn-readless-four" onclick="ToggleText('four')" class="hidden text-sky-600 text-sm underline ">Read less</button>
               </span>
 
               <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
@@ -444,21 +444,21 @@
               <p class="text-gray-600"><span class="underline">Description:</span>
                 This is an open-source project for a boat and yacht designer website. It includes 
 
-                <span id="dots-four">...</span>
+                <span id="dots-five">...</span>
 
                 <span>
-                  <button id="btn-readmore-four" onclick="ToggleTextFive()" class="text-sky-600 text-sm underline">Read more</button>
+                  <button id="btn-readmore-five" onclick="ToggleText('five')" class="text-sky-600 text-sm underline">Read more</button>
                 </span>
 
-                <span id="moretext-four" class="hidden"> information about the designer, their portfolio,
+                <span id="moretext-five" class="hidden"> information about the designer, their portfolio,
                    and a section for visitors to contact the designer.  To use this project, simply clone the repository 
                   and update the information in the About section and the portfolio with your own information. 
                   You can also customize the design by modifying the Tailwind CSS styles.
                 </span>
               </p>
 
-              <span  >
-                <button id="btn-readless-four" onclick="ToggleTextFive()" class="hidden text-sky-600 text-sm underline ">Read less</button>
+              <span id="readless-five" >
+                <button id="btn-readless-five" onclick="ToggleText('five')" class="hidden text-sky-600 text-sm underline ">Read less</button>
               </span>
 
               <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
@@ -490,18 +490,18 @@
               <p class="text-gray-600"><span class="underline">Description:</span>
                 This is a website project for developers who want to showcase their 
 
-                <span id="dots-five">...</span>
+                <span id="dots-six">...</span>
 
                 <span>
-                  <button id="btn-readmore-five" onclick="ToggleTextSix()" class="text-sky-600 text-sm underline">Read more</button>
+                  <button id="btn-readmore-six" onclick="ToggleText('six')" class="text-sky-600 text-sm underline">Read more</button>
                 </span>
 
-                <span id="moretext-five" class="hidden"> skills, experience, and projects. The website is built using HTML,
+                <span id="moretext-six" class="hidden"> skills, experience, and projects. The website is built using HTML,
                    CSS, and JavaScript, and is designed to be responsive and mobile-friendly. 
               </p>
 
-              <span>
-                <button id="btn-readless-five" onclick="ToggleTextSix()" class="hidden text-sky-600 text-sm underline ">Read less</button>
+              <span id="readless-six">
+                <button id="btn-readless-six" onclick="ToggleText('six')" class="hidden text-sky-600 text-sm underline ">Read less</button>
               </span>
 
               <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
