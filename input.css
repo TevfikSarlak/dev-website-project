@@ -66,10 +66,11 @@
   }
 }
 
+/*Background Image Changer transition utilities*/
 @layer utilities {
 
     .transition-bg-image {
         transition-property: background-image;
-        transition-duration: 0.5s;
+        transition-duration: 1s;
         transition-timing-function: ease;
   }
