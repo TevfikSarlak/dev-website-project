@@ -65,3 +65,11 @@
     overflow-x: hidden;
   }
 }
+
+@layer utilities {
+
+    .transition-bg-image {
+        transition-property: background-image;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+  }

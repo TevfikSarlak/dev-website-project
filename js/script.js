@@ -65,6 +65,8 @@ var typed = new Typed(".mov",{
         buttonReadless.classList.add("hidden");
       }
     }
+
+   
     
 
    

@@ -13,13 +13,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
+    <script src="js/background.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Developer Website</title>
 </head>
 <body class="bg-gray-50 w-full overflow-x-hidden">
     <!-- Hero Section -->
     <section id="home">
-    <div class="bg-[url('/images/intro.svg')] bg-cover bg-center flex flex-col  ">
+    <div id="myBackground" class="flex flex-col transition-bg-image ">
+
         <!-- Navbar -->
         <nav class="bg-white flex flex-row px-2 justify-between top-0 pt-4 h-16 md:flex-row md:justify-between shadow-lg">
             <h1 class="font-thin font-yellowtail ml-2 ">Tevfik Sarlak</h1>
