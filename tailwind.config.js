@@ -6,7 +6,7 @@ module.exports = {
 
       fontFamily: {
         'noto': ['Noto Sans', 'sans-serif'],
-        'cursive': ['Sacramento', 'cursive'],
+        'yellowtail': ['Yellowtail', 'cursive'],
       },
 
       

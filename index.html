@@ -9,19 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script
     :wght@700&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Developer Website</title>
 </head>
-<body class="bg-gray-50 w-full overflow-x-hidden font-noto">
+<body class="bg-gray-50 w-full overflow-x-hidden">
     <!-- Hero Section -->
     <section id="home">
     <div class="bg-[url('/images/intro.svg')] bg-cover bg-center flex flex-col  ">
         <!-- Navbar -->
         <nav class="bg-white flex flex-row px-2 justify-between top-0 pt-4 h-16 md:flex-row md:justify-between shadow-lg">
-            <h1 class="font-bold ml-2">Tevfik Şarlak</h1>
+            <h1 class="font-thin font-yellowtail ml-2 ">Tevfik Sarlak</h1>
             <!-- Menu -->
-            <div class="hidden h-10 text-slate-600 font-sans font-semibold md:flex md:space-x-8 md:justify-end">
+            <div class="hidden h-10 text-slate-800 font-noto font-semibold md:flex md:space-x-8 md:justify-end">
                 <div class="group">
                   <a href="#home">Home</a>
                   <div
@@ -54,7 +57,7 @@
                 </div>
             </div>
              <!-- Hamburger Button -->
-            <div class="md:hidden">
+            <div class="md:hidden font-noto">
                 <button
                 id="menu-btn"
                 type="button"
@@ -71,7 +74,7 @@
         <!-- Mobile Menu -->
         <div
           id="menu"
-          class=" top-0 bottom-0 left-0 hidden flex-col 
+          class=" top-0 bottom-0 left-0 hidden flex-col font-noto
           self-end w-full min-h-screen py-1 pt-20 pl-12 space-y-3 text-lg
            text-white bg-gray-800"
         >
@@ -83,8 +86,8 @@
         </div>
         
         <!-- Text -->
-        <div class="mt-24 px-8 text-left text-slate-700 font-sans md:px-24">
-            <div class="text-6xl md:text-8xl font-bold mb-6">
+        <div class="mt-24 px-8 text-left font-noto md:px-24">
+            <div class="text-6xl md:text-8xl font-bold mb-6 text-slate-700">
                 Hey,
             </div>
 
@@ -92,15 +95,51 @@
                 I am Tevfik and this is my page.
             </div>
 
-            <div class="text-md md:text-2xl font-semibold pb-72">
+            <div class="text-md md:text-2xl font-semibold text-slate-800">
                 I am  <span class="mov"> </span>
             </div>  
+
+            <!-- Icons -->
+            <div class="flex flex-row mt-16 font-noto md:flex-row md:justify-end md:mr-8 space-x-2 pt-24 pb-72">
+              <div class="flex flex-col mx-1 h-16 w-16 opacity-70 hover:opacity-100">
+                <a href="/asset/Tevfik_Resume.pdf" download>
+                  <img src="/images/resume.png" 
+                       alt="Resume" 
+                       class="rounded-md">
+                </a>
+              </div>
+              
+              <div class="mx-2 h-16 w-16 opacity-70 hover:opacity-100">
+                <a href="https://github.com/TevfikSarlak">
+                  <img src="/images/github.png"
+                       alt="GitHub" 
+                       class="rounded-md">
+                </a>
+              </div>
+              
+              <div class="mx-2 h-16 w-16 opacity-70 hover:opacity-100">
+                <a href="https://www.linkedin.com/in/tevfik-%C5%9Farlak-25854a135/">
+                  <img src="/images/linkedin.png"
+                       alt="LinkedIn" 
+                       class="rounded-md">
+                </a>
+              </div>
+              
+              <div class="mx-2 h-16 w-16 opacity-70 hover:opacity-100">
+                <a href="https://medium.com/@tevfiksarlak">
+                  <img src="/images/medium.png" 
+                       alt="Medium" 
+                       class="rounded-md">
+                </a>
+              </div>
+              
+            </div>
         </div>
     </div>
    </section>
 
    <!-- About Section -->
-   <section id="about" class="bg-[url('/images/bg-three.svg')] bg-cover bg-center">
+   <section id="about" class="bg-[url('/images/bg-three.svg')] bg-cover bg-center font-noto">
     
        
       <div class="flex flex-col justify-center items-center text-left py-12">
@@ -142,7 +181,7 @@
    </section>
 
    <!-- Skills Section-->
-   <section id="skills" class="bg-[url('/images/bg-one.svg')] bg-cover bg-center pb-48">
+   <section id="skills" class="bg-[url('/images/bg-one.svg')] bg-cover bg-center pb-48 font-noto">
     <div class="flex flex-wrap justify-center">
     <div class="flex flex-col mx-auto justify-center items-center py-12 space-y-6 md:grid md:grid-cols-2 md:px-8">
   
@@ -239,7 +278,7 @@
     </section>
     
     <!-- Projects -->
-    <section id="projects" class="bg-[url('/images/bg-four.svg')] bg-cover bg-center mx-4 w-full">
+    <section id="projects" class="bg-[url('/images/bg-four.svg')] bg-cover bg-center mx-4 w-full font-noto">
       <div class="flex flex-col justify-center items-center mb-80 mt-40 sm:mx-12">
         <h1 class="text-center underline font-bold text-2xl mb-12 text-slate-700 ">Projects</h1>
         
@@ -531,7 +570,7 @@
     </section>
     
     <!-- ContactMe Section -->
-    <section id="contact" class="bg-[url('/images/bg-two.svg')] bg-cover">
+    <section id="contact" class="bg-[url('/images/bg-two.svg')] bg-cover font-noto">
 
       <div class="mb-60 py-24 md:flex md:flex-col md:justify-center md:mx-72">
 
@@ -547,8 +586,10 @@
              focus:ring-blue-600 focus:border-transparent" id="name" type="text" placeholder="Your Name" name="name">
           </div>
           <div class="mb-4">
-            <label class="block text-gray-700  mb-2" type="email">
-              Email<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
+            <label class="block text-gray-700 font-bold mb-2" type="email">
+              Email
+            </label>
+            <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
             focus:ring-blue-600 focus:border-transparent" id="email" type="email" placeholder="Your Email" name="email">
             </label>
             
@@ -571,7 +612,7 @@
 
     <!-- Footer Section -->
     <section>
-      <footer class="bg-gray-800 text-white">
+      <footer class="bg-gray-800 text-white font-noto">
         <div class="container mx-auto pt-12 px-5 pb-10">
           <!-- Flex Container For All Items -->
           <div
