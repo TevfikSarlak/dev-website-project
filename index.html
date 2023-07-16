@@ -13,48 +13,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
-    <script src="js/background.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Developer Website</title>
 </head>
-<body class="bg-gray-50 w-full overflow-x-hidden">
+<body class="bg-gray-100 w-full overflow-x-hidden">
     <!-- Hero Section -->
-    <section id="home">
-    <div id="myBackground" class="flex flex-col transition-bg-image ">
+    <section id="home" class="mb-48">
+      <div class="bg-[url(/images/bg-main.jpg)] bg-cover bg-center h-screen shadow-xl">
 
         <!-- Navbar -->
         <nav class="bg-white flex flex-row px-2 justify-between top-0 pt-4 h-16 md:flex-row md:justify-between shadow-lg">
-            <h1 class="font-thin font-yellowtail ml-2 ">Tevfik Sarlak</h1>
+            <h1 class="font-thin text-lg font-yellowtail ml-2 text-violet-700">Tevfik Sarlak</h1>
             <!-- Menu -->
             <div class="hidden h-10 text-slate-800 font-noto font-semibold md:flex md:space-x-8 md:justify-end">
                 <div class="group">
                   <a href="#home">Home</a>
                   <div
-                    class="mx-2 group-hover:border-b group-hover:border-gray-700"
+                    class="mx-2 group-hover:border-b group-hover:border-violet-700 group-hover:border-2"
                   ></div>
                 </div>
                 <div class="group">
                   <a href="#about">About</a>
                   <div
-                    class="mx-2 group-hover:border-b group-hover:border-gray-700"
+                    class="mx-2 group-hover:border-b group-hover:border-violet-700 group-hover:border-2"
                   ></div>
                 </div>
                 <div class="group">
                   <a href="#skills">Skills</a>
                   <div
-                    class="mx-2 group-hover:border-b group-hover:border-gray-700"
+                    class="mx-2 group-hover:border-b group-hover:border-violet-700 group-hover:border-2"
                   ></div>
                 </div>
                 <div class="group">
                   <a href="#projects">Projects</a>
                   <div
-                    class="mx-2 group-hover:border-b group-hover:border-gray-700"
+                    class="mx-2 group-hover:border-b group-hover:border-violet-700 group-hover:border-2"
                   ></div>
                 </div>
                 <div class="group">
                   <a href="#contact">Contact</a>
                   <div
-                    class="mx-2 group-hover:border-b group-hover:border-gray-700"
+                    class="mx-2 group-hover:border-b group-hover:border-violet-700 group-hover:border-2"
                   ></div>
                 </div>
             </div>
@@ -80,73 +79,48 @@
           self-end w-full min-h-screen py-1 pt-20 pl-12 space-y-3 text-lg
            text-white bg-gray-800"
         >
-          <a href="https://tevfikdev.dev/" class="hover:text-gray-400">Home</a>
-          <a href="#about" class="hover:text-gray-400">About</a>
-          <a href="#skills" class="hover:text-gray-400">Skills</a>
-          <a href="#projects" class="hover:text-gray-400">Projects</a>
-          <a href="#contact" class="hover:text-gray-400">Contact</a>
+          <a href="https://tevfikdev.dev/" class="hover:text-violet-400">Home</a>
+          <a href="#about" class="hover:text-violet-400">About</a>
+          <a href="#skills" class="hover:text-violet-400">Skills</a>
+          <a href="#projects" class="hover:text-violet-400">Projects</a>
+          <a href="#contact" class="hover:text-violet-400">Contact</a>
         </div>
         
         <!-- Text -->
-        <div class="mt-24 px-8 text-left font-noto md:px-24">
+        <div class="mt-24 pl-8 md:pl-72 text-left flex flex-col justify-center font-noto mx-auto">
             <div class="text-6xl md:text-8xl font-bold mb-6 text-slate-700">
                 Hey,
             </div>
 
-            <div class="text-lg md:text-4xl text-slate-600 font-semibold py-4">
+            <div class="text-lg md:text-4xl text-slate-900 font-semibold py-4">
                 I am Tevfik and this is my page.
             </div>
 
-            <div class="text-md md:text-2xl font-semibold text-slate-800">
+            <div class="text-md md:text-2xl font-semibold text-slate-800 mb-4 ">
                 I am  <span class="mov"> </span>
             </div>  
 
-            <!-- Icons -->
-            <div class="flex flex-row mt-16 font-noto md:flex-row md:justify-end md:mr-8 space-x-2 pt-24 pb-72">
-              <div class="flex flex-col mx-1 h-16 w-16 opacity-70 hover:opacity-100">
-                <a href="/asset/Tevfik_Resume.pdf" download>
-                  <img src="/images/resume.png" 
-                       alt="Resume" 
-                       class="rounded-md">
-                </a>
-              </div>
-              
-              <div class="mx-2 h-16 w-16 opacity-70 hover:opacity-100">
-                <a href="https://github.com/TevfikSarlak">
-                  <img src="/images/github.png"
-                       alt="GitHub" 
-                       class="rounded-md">
-                </a>
-              </div>
-              
-              <div class="mx-2 h-16 w-16 opacity-70 hover:opacity-100">
-                <a href="https://www.linkedin.com/in/tevfik-%C5%9Farlak-25854a135/">
-                  <img src="/images/linkedin.png"
-                       alt="LinkedIn" 
-                       class="rounded-md">
-                </a>
-              </div>
-              
-              <div class="mx-2 h-16 w-16 opacity-70 hover:opacity-100">
-                <a href="https://medium.com/@tevfiksarlak">
-                  <img src="/images/medium.png" 
-                       alt="Medium" 
-                       class="rounded-md">
-                </a>
-              </div>
-              
+            <div class="text-xs md:text-sm font-semibold text-violet-700  flex flex-row">
+              <a class="hover:underline indent-1" href="/asset/Tevfik_Resume.pdf" download>
+                  MY RESUME 
+              </a>
+              <span class="indent-1">|</span>
+              <a class="hover:underline indent-1" href="/TevfikSarlak">
+                  MY GITHUB
+              </a>
+
             </div>
         </div>
     </div>
    </section>
 
    <!-- About Section -->
-   <section id="about" class="bg-[url('/images/bg-three.svg')] bg-cover bg-center font-noto">
+   <section id="about" class="bg-[url('/images/bg-three.svg')] bg-cover bg-center font-noto mt-24">
     
        
       <div class="flex flex-col justify-center items-center text-left py-12">
         
-           <div class="text-2xl font-bold mx-auto underline text-slate-700 pb-2">
+           <div class="text-2xl font-bold mx-auto underline text-slate-700 pb-2 underline-offset-8 decoration-violet-700 decoration-4 mb-8">
                About Me
            </div>
 
@@ -173,7 +147,7 @@
                   I would be delighted to hear from you. You can find my resume and contact information at link down below.
                    Thank you for visiting my portfolio, and I look forward to connecting with you soon."<br>
                   <br>
-               <a href="/asset/Tevfik_Resume.pdf"  class="hover:underline font-semibold text-indigo-700" download>Get My Resume &#x2192;</a>          
+               <a href="/asset/Tevfik_Resume.pdf"  class="hover:underline hover:decoration-offset-2 font-semibold text-violet-700" download>Get My Resume &#x2192;</a>          
            
           </p>
 
@@ -183,384 +157,298 @@
    </section>
 
    <!-- Skills Section-->
-   <section id="skills" class="bg-[url('/images/bg-one.svg')] bg-cover bg-center pb-48 font-noto">
-    <div class="flex flex-wrap justify-center">
-    <div class="flex flex-col mx-auto justify-center items-center py-12 space-y-6 md:grid md:grid-cols-2 md:px-8">
-  
+   <section id="skills" class="bg-[url('/images/bg-one.svg')] bg-cover bg-center py-36 font-noto">
+    <div class="flex flex-wrap justify-center px-8">
+      <!-- Card Container -->
+      <div class="rounded-lg bg-gray-200 drop-shadow-lg mb-4 pb-4">
+        <div class="flex flex-col mx-auto justify-center items-center py-2 space-y-4 md:grid md:grid-cols-2 md:px-4">
+      
 
-           <!-- Skills -->
-           <div class="space-y-4 md:mt-12 text-center items-center">
-            <h1 class="underline text-2xl font-bold mb-12 text-slate-700 r">Skills</h1>
+              <!-- Skills -->
+              <div class="space-y-4 md:mt-12 text-center items-center ">
+                <h1 class="underline text-2xl font-bold mb-12 text-slate-700 underline-offset-8 decoration-violet-700 decoration-4">Skills</h1>
 
-               <!-- Logos -->
-             <div class="grid grid-cols-2 justify-between gap-6 mx-8 space-y-4 md:grid-cols-4 md:px-8 text-gray-600">
-                <div class="group pt-4 flex flex-col justify-center items-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="img h-16 w-16" />
-                  <p class="text mx-auto opacity-0 transition-opacity duration-200 ease-in-out ">HTML5</p>
-                </div>
-          
-                <div class="group flex flex-col justify-center items-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="img h-16 w-16" />
-                  <p class="text mx-auto opacity-0 transition-opacity duration-200 ease-in-out  ">CSS3</p>
-                </div>
-
-                <div class="group flex flex-col justify-center items-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="img h-16 w-16" />
-                  <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">JavaScript</p>
-                </div>
-
-                <div class="group flex flex-col justify-center items-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="img h-16 w-16"/>
-                  <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">Python</p>
-                </div>
-
-                <div class="group flex flex-col justify-center items-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="img h-16 w-16"/>
-                  <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">ReactJS</p>
-                </div>
-
-                <div class="group flex flex-col justify-center items-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="img h-16 w-16"/>
-                  <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">Bootstrap</p>
-                </div>
-
-                <div class="group flex flex-col justify-center items-center">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="img h-16 w-16" />
-                  <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">Tailwindcss</p>
-                </div>
-
-                <div class="group flex flex-col justify-center items-center mb-12">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="img h-16 w-16" />
-                  <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">Git</p>
-                </div>
-  
-              </div>
-
+                  <!-- Logos -->
+                <div class="grid grid-cols-3 justify-between gap-6 mx-8 space-y-4 md:grid-cols-4 md:px-8 text-gray-600">
+                    <div class="group pt-4 flex flex-col justify-center items-center">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="img h-16 w-16 filter-grayscale transition duration-200 ease-in-out" />
+                      <p class="text mx-auto opacity-0 transition-opacity duration-200 ease-in-out text-sm">HTML5</p>
+                    </div>
               
+                    <div class="group flex flex-col justify-center items-center">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="img h-16 w-16" />
+                      <p class="text mx-auto opacity-0 transition-opacity duration-200 ease-in-out text-sm ">CSS3</p>
+                    </div>
+
+                    <div class="group flex flex-col justify-center items-center">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="img h-16 w-16" />
+                      <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm">JavaScript</p>
+                    </div>
+
+                    <div class="group flex flex-col justify-center items-center">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="img h-16 w-16"/>
+                      <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm">Python</p>
+                    </div>
+
+                    <div class="group flex flex-col justify-center items-center">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="img h-16 w-16"/>
+                      <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm ">ReactJS</p>
+                    </div>
+
+                    <div class="group flex flex-col justify-center items-center">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="img h-16 w-16"/>
+                      <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm">Bootstrap</p>
+                    </div>
+
+                    <div class="group flex flex-col justify-center items-center">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="img h-16 w-16" />
+                      <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm">Tailwindcss</p>
+                    </div>
+
+                    <div class="group flex flex-col justify-center items-center ">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" class="img h-16 w-16" />
+                      <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm ">Firebase</p>
+                    </div>
+                    
+                    <div class="group flex flex-col justify-center items-center">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="img h-16 w-16"/>
+                      <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm">Github</p>
+                    </div>
+
+                    <div class="group flex flex-col justify-center items-center">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="img h-16 w-16" />
+                      <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm">Git</p>
+                    </div>
+      
+                  </div>
+
+                  
+              </div>
+              <!-- Skills To Learn -->
+              <div class="space-y-4 md:mt-12 text-center items-center ">
+                <h1 class="underline text-2xl font-bold mb-12 text-slate-700 mt-8 underline-offset-8 decoration-violet-700 decoration-4">Skills to Learn</h1>
+
+                <!-- Logos -->
+                <div class="grid grid-cols-3 justify-between gap-6 mx-8 space-y-4 md:grid-cols-4 md:px-8 text-gray-600">
+
+                  <div class="group flex flex-col justify-center items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="img h-16 w-16"/>
+                    <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm ">PHP</p>
+                  </div>
+
+                  <div class="group flex flex-col justify-center items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" class="img h-16 w-16"/>
+                    <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm ">Laravel</p>
+                  </div>
+
+                  <div class="group flex flex-col justify-center items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="img h-16 w-16" />
+                    <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm ">MySQL</p>
+                  </div>
+
+                  <div class="group flex flex-col justify-center items-center ">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"  class="img h-16 w-16"/>
+                    <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm ">Node.js</p>
+                  </div>
+
+                  <div class="group flex flex-col justify-center items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="img h-16 w-16" />
+                    <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm ">MongoDB</p>
+                  </div>
+
+                  <div class="group flex flex-col justify-center items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" class="img h-16 w-16"/>
+                    <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm">Solidity</p>
+                  </div>
+
+                  <div class="group flex flex-col justify-center items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" class="img h-16 w-16" />
+                    <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm ">Rust</p>
+                  </div>
+                  
+                  <div class="group flex flex-col justify-center items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="img h-16 w-16"/>
+                    <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm">Django</p>
+                  </div>
+
+                  <div class="group flex flex-col justify-center items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="img h-16 w-16"/>
+                    <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm ">Typescript</p>
+                  </div>
+
+                  <div class="group flex flex-col justify-center items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" class="img h-16 w-16" />
+                    <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out text-sm ">Sass</p>
+                  </div>
+              </div>
           </div>
-           <!-- Skills To Learn -->
-           <div class="space-y-4 md:mt-12 text-center items-center ">
-            <h1 class="underline text-2xl font-bold mb-12 text-slate-700 mt-8">Skills to Learn</h1>
-
-             <!-- Logos -->
-             <div class="grid grid-cols-2 justify-between gap-6 mx-8 space-y-4 md:grid-cols-4 md:px-8 text-gray-600">
-
-              <div class="group pt-4 flex flex-col justify-center items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"  class="img h-16 w-16"/>
-                <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">Node.js</p>
-              </div>
-
-              <div class="group flex flex-col justify-center items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="img h-16 w-16" />
-                <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">MongoDB</p>
-              </div>
-
-              <div class="group flex flex-col justify-center items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" class="img h-16 w-16" />
-                <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">Rust</p>
-              </div>
-              
-              <div class="group flex flex-col justify-center items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="img h-16 w-16"/>
-                <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">Django</p>
-              </div>
-
-              <div class="group flex flex-col justify-center items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" class="img h-16 w-16"/>
-                <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">Solidity</p>
-              </div>
-
-              <div class="group flex flex-col justify-center items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="img h-16 w-16"/>
-                <p class="text mx-auto px-2 opacity-0 transition-opacity duration-200 ease-in-out ">PHP</p>
-              </div>
-           </div>
-       </div>
+          </div>
+        </div>
       </div>
     </section>
     
     <!-- Projects -->
-    <section id="projects" class="bg-[url('/images/bg-four.svg')] bg-cover bg-center mx-4 w-full font-noto">
-      <div class="flex flex-col justify-center items-center mb-80 mt-40 sm:mx-12">
-        <h1 class="text-center underline font-bold text-2xl mb-12 text-slate-700 ">Projects</h1>
+    <section id="projects" class="bg-[url('/images/bg-four.svg')] bg-cover bg-center mx-2 w-full font-noto overflow-x-hidden">
+      <div class="flex flex-col justify-center items-center mb-80 mt-40 sm:mx-4">
+        <h1 class="text-center underline font-bold text-2xl mb-12 text-slate-700 underline-offset-8 decoration-violet-700 decoration-4">Projects</h1>
         
         <!-- Cards Container -->
-        <div class="md:grid md:grid-cols-2 gap-6">
+        <div class="md:grid md:grid-cols-2 gap-6 z-50 ">
           <!--Project1-->
-          <div class="bg-slate-100 rounded-lg shadow-xl  w-80 md:w-96  mb-12 mx-auto hover:scale-105">
-            <img src="/images/Fridgezy.PNG" class="mt-1 mb-4 rounded-t-md"/>
-            <div class="mx-2 leading-loose p-6 ">
+          <div class="bg-gray-200 rounded-lg shadow-xl  w-80 md:w-96  mb-12 mx-auto">
+            <img src="/images/Fridgezy.PNG" class="mt-1 h-1/3 w-full rounded-t-md mb-4"/>
+            <div class="mx-2 leading-loose p-2 md:p-4 ">
               <h2 class="text-lg font-medium mb-4">Fridgezy</h2>
-              
-              <p class="text-gray-600"><span class="underline">Description:</span>
-                Fridgezy is an innovative web application designed to simplify the cooking experience
 
-                <span id="dots-one">...</span>
-
-                <span id="readmore-one" class="">
-                  <button id="btn-readmore-one" onclick="ToggleText('one')" class="text-sky-600 text-sm underline">Read more</button>
-                </span>
-
-                <span id="moretext-one" class="hidden">for users by utilizing the ingredients available in their refrigerators. With Fridgezy, users can easily
-                    input the items they have in their fridge, and the app provides personalized recipe suggestions based on those 
-                    ingredients. It's a handy tool that helps users make the most out of what they have, reducing food waste and 
-                    inspiring creativity in the kitchen.
-                  Fridgezy goes beyond just recipe recommendations. It also keeps track of unused ingredients, making it easy for 
-                  users to identify items that need to be used before they expire. Additionally, Fridgezy provides a convenient 
-                  feature that highlights the missing ingredients for selected recipes, allowing users to quickly create shopping 
-                  lists for their desired meals.
-                  In addition to its core functionality, Fridgezy has exciting upcoming features planned, including the ability to
-                   upload custom recipes and the option to add fridge items by simply taking a snapshot with your mobile device. 
-                   Fridgezy is your go-to companion for efficient meal planning, helping you create delicious dishes while minimizing 
-                   food waste and maximizing the ingredients you have on hand
-                </span>
+              <p class="text-left text-slate-700 font-base text-sm mb-8 ">
+                Fridgezy is a useful application designed to simplify your cooking experience and reduce food waste. 
+                With Fridgezy, you can effortlessly manage the contents of your fridge and transform them into delicious meals.
               </p>
 
-              <span >
-                <button id="btn-readless-one" onclick="ToggleText('one')" class="hidden text-sm  text-sky-600 underline ">Read less</button>
-              </span>
-
-              <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
-                <button>
-                  <a href="https://fridgezy-k5n2.vercel.app/" target="_blank" class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >See Site</a>
-                </button> 
-
-                <button>
-                  <a href="https://github.com/TevfikSarlak/Fridgezy" target="_blank" class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >Source</a>
-                </button> 
+              <div class="flex flex-row justify-center items-center">
+                <button class="text-gray-50 bg-violet-700 px-12 py-2 rounded-lg mb-8 hover:-translate-y-1 hover:shadow-xl">
+                     View Project
+                </button>
               </div>
 
-              <p class="text-gray-600 text-xs">Tags: HTML5, CSS, Tailwindcss, ReactJS, MaterialUI</p>
+              <p class="text-gray-600 text-xs">
+                <span class="font-bold underline">Tags:</span>
+                 HTML5, CSS, Tailwindcss, ReactJS, MaterialUI
+              </p>
             </div>
              
           </div>
 
            <!--Project2-->
-           <div class="bg-slate-100 rounded-lg shadow-xl  w-80 md:w-96  mb-12 mx-auto hover:scale-105">
-            <img src="/images/my-weekly-planner.PNG" class="mt-1 rounded-t-md"/>
-            <div class="mx-2 leading-loose p-6 ">
+           <div class="bg-gray-200 rounded-lg shadow-xl  w-80 md:w-96  mb-12 mx-auto">
+            <img src="/images/my-weekly-planner.PNG" class="mt-1 h-1/3 w-full rounded-t-md mb-4"/>
+            <div class="mx-2 leading-loose p-2 md:p-4">
               <h2 class="text-lg font-medium mb-4">My-Weekly-Planner-App</h2>
-              
-              <p class="text-gray-600"><span class="underline">Description:</span>
-                My Week Calendar is a simple and easy-to-use web application for planning your week
 
-                <span id="dots-two">...</span>
-
-                <span id="readmore-two" class="">
-                  <button id="btn-readmore-two" onclick="ToggleText('two')" class="text-sky-600 text-sm underline">Read more</button>
-                </span>
-
-                <span id="moretext-two" class="hidden"> It allows you to add, delete, and check off tasks, 
-                  as well as take notes and save your progress. The calendar starts on Monday to help 
-                  you plan out your workweek. My Week Calendar was built with ReactJS and styled using Tailwind CSS.
-                </span>
+              <p class="text-left text-slate-700 font-base text-sm mb-8 ">
+                My Weekly Planner is a powerful mobile application designed to help you stay organized, manage your tasks,
+                and make the most of your week. With My Weekly Planner, you can effortlessly plan your schedule.
               </p>
 
-              <span >
-                <button id="btn-readless-two" onclick="ToggleText('two')" class="hidden text-sm  text-sky-600 underline ">Read less</button>
-              </span>
-
-              <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
-                <button>
-                  <a href="https://www.myweek.site/" target="_blank" class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >See Site</a>
-                </button> 
-
-                <button>
-                  <a href="https://github.com/TevfikSarlak/my-weekly-planner-app" target="_blank" class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >Source</a>
-                </button> 
+              <div class="flex flex-row justify-center items-center">
+                <button class="text-gray-50 bg-violet-700 px-12 py-2 rounded-lg mb-8 hover:-translate-y-1 hover:shadow-xl">
+                     View Project
+                </button>
               </div>
 
-              <p class="text-gray-600 text-xs">Tags: HTML5, CSS, Tailwindcss, ReactJS</p>
+              <p class="text-gray-600 text-xs">
+                <span class="font-bold underline">Tags:</span>
+                 HTML5, CSS, Tailwindcss, ReactJS, Router-Dom, Firebase
+              </p>
             </div>
              
           </div>
 
 
           <!--Project3-->
-          <div class="bg-slate-100 rounded-lg shadow-xl  w-80 md:w-96  mb-12 mx-auto   hover:scale-105">
-            <img src="/images/dev-interview-preparation-app.PNG" class="mt-1 rounded-t-md"/>
-            <div class="mx-2 leading-loose p-6 ">
-              <h2 class="text-lg font-medium mb-4">Dev-Interview-Preparation-App</h2>
-              
-              <p class="text-gray-600"><span class="underline">Description:</span>
-                The Developer Interview Preparation App is a web application designed to help 
-
-                <span id="dots-three">...</span>
-
-                <span>
-                  <button id="btn-readmore-three" onclick="ToggleText('three')" class="text-sky-600 text-sm underline">Read more</button>
-                </span>
-
-                <span id="moretext-three" class="hidden"> aspiring developers prepare for their interviews by providing questions and resources related to 
-                  HTML, CSS, JavaScript, and ReactJS questions. The app allows users to choose between
-                   classical question and multiple choice questions, and also allows them to select the number
-                    of questions they want to attempt.
-                </span>
-              </p>
-
-              <span id="readless-three" >
-                <button id="btn-readless-three" onclick="ToggleText('three')" class="hidden text-sky-600 text-sm underline ">Read less</button>
-              </span>
-
-              <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
-                <button>
-                  <a href="https://practodev.vercel.app/" target="_blank" class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >See Site</a>
-                </button> 
-
-                <button>
-                  <a href="https://github.com/TevfikSarlak/developer-interview-preparation-app" target="_blank"
-                   class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >Source</a>
-                </button> 
-              </div>
-
-              <p class="text-gray-600 text-xs">Tags: HTML5, CSS, Tailwindcss, ReactJS</p>
-            </div>
-             
-          </div>
-
-          <!--Project4-->
-          <div class="bg-slate-100 rounded-lg shadow-xl w-80 md:w-96  mb-12 mx-auto   hover:scale-105">
-            <img src="/images/my-password-randomizer.PNG" class="mt-1 rounded-t-md"/>
-            <div class="mx-2 leading-loose p-6 ">
-              <h2 class="text-lg font-medium mb-4">My-Password-Randomizer</h2>
-              
-              <p class="text-gray-600"><span class="underline">Description:</span>
-                This is a simple password generator web application that allows users 
-
-                <span id="dots-four">...</span>
-
-                <span>
-                  <button id="btn-readmore-four" onclick="ToggleText('four')" class="text-sky-600 text-sm underline">Read more</button>
-                </span>
-
-                <span id="moretext-four" class="hidden"> to create a password with a custom length and set of characters.
-                  Users can choose the length of the password, with a minimum of 4 characters and a maximum of 24 characters.
-                  Users can select which types of characters to include in the password, including uppercase letters, lowercase
-                  letters, symbols, and numbers.
-                </span>
-              </p>
-
-              <span id="readless-four" >
-                <button id="btn-readless-four" onclick="ToggleText('four')" class="hidden text-sky-600 text-sm underline ">Read less</button>
-              </span>
-
-              <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
-                <button>
-                  <a href="https://passwordrandomizer.vercel.app/" target="_blank" class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >See Site</a>
-                </button> 
-
-                <button>
-                  <a href="https://github.com/TevfikSarlak/my-password-generator" target="_blank"
-                   class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >Source</a>
-                </button> 
-              </div>
-
-              <p class="text-gray-600 text-xs">Tags: HTML5, CSS, Tailwindcss</p>
-            </div>
-             
-          </div>
-
-          <!--Project5-->
-          <div class="bg-slate-100 rounded-lg shadow-xl w-80 md:w-96  mb-12 mx-auto  hover:scale-105">
-            <img src="/images/designer-website.PNG" class="mt-1 rounded-t-md"/>
-            <div class="mx-2 leading-loose p-6 ">
+          <div class="bg-gray-200 rounded-lg shadow-xl w-80 md:w-96  mb-12 mx-auto">
+            <img src="/images/designer-website.PNG" class="mt-1 h-1/3 w-full rounded-t-md mb-4"/>
+            <div class="mx-2 leading-loose p-2 md:p-4 ">
               <h2 class="text-lg font-medium mb-4">Designer-Website</h2>
               
-              <p class="text-gray-600"><span class="underline">Description:</span>
-                This is an open-source project for a boat and yacht designer website. It includes 
-
-                <span id="dots-five">...</span>
-
-                <span>
-                  <button id="btn-readmore-five" onclick="ToggleText('five')" class="text-sky-600 text-sm underline">Read more</button>
-                </span>
-
-                <span id="moretext-five" class="hidden"> information about the designer, their portfolio,
-                   and a section for visitors to contact the designer.  To use this project, simply clone the repository 
-                  and update the information in the About section and the portfolio with your own information. 
-                  You can also customize the design by modifying the Tailwind CSS styles.
-                </span>
+              <p class="text-left text-slate-700 font-base text-sm mb-8 ">
+                Hook Boat Design is an open-source landing page template specifically designed for boat and yacht designers to showcase their portfolio
+                and share their passion for maritime craftsmanship. You have the freedom to customize the content and photos. 
+                
               </p>
 
-              <span id="readless-five" >
-                <button id="btn-readless-five" onclick="ToggleText('five')" class="hidden text-sky-600 text-sm underline ">Read less</button>
-              </span>
-
-              <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
-                <button>
-                  <a href="https://hookdesignbeta.netlify.app/" target="_blank" class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >See Site</a>
-                </button> 
-
-                <button>
-                  <a href="https://github.com/TevfikSarlak/designer-website" target="_blank"
-                   class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >Source</a>
-                </button> 
+              <div class="flex flex-row justify-center items-center">
+                <button class="text-gray-50 bg-violet-700 px-12 py-2 rounded-lg mb-8 hover:-translate-y-1 hover:shadow-xl">
+                     View Project
+                </button>
               </div>
 
-              <p class="text-gray-600 text-xs">Tags: HTML5, CSS, Tailwindcss, ReactJS, Framer Motion</p>
+              <p class="text-gray-600 text-xs">
+                <span class="font-bold underline">Tags:</span>
+                 HTML5, CSS, Tailwindcss, ReactJS, Router-Dom, Framer Motion
+              </p>
             </div>
              
           </div>
+         
 
-          <!--Project6-->
-          <div class="bg-slate-100 rounded-lg shadow-xl w-80 md:w-96  mb-12 mx-auto  hover:scale-105">
-            <img src="/images/dev-website.PNG" class="mt-1 rounded-t-md"/>
-            <div class="mx-2 leading-loose p-6 ">
-              <h2 class="text-lg font-medium mb-4">Dev-Portfolio-Website</h2>
+          <!--Project4-->
+          <div class="bg-gray-200 rounded-lg shadow-xl  w-80 md:w-96  mb-12 mx-auto">
+            <img src="/images/dev-interview-preparation-app.PNG" class="mt-1 h-1/3 w-full rounded-t-md mb-4"/>
+            <div class="mx-2 leading-loose p-2 md:p-4">
+              <h2 class="text-lg font-medium mb-4">Dev-Interview-Preparation-App</h2>
               
-              <p class="text-gray-600"><span class="underline">Description:</span>
-                This is a website project for developers who want to showcase their 
-
-                <span id="dots-six">...</span>
-
-                <span>
-                  <button id="btn-readmore-six" onclick="ToggleText('six')" class="text-sky-600 text-sm underline">Read more</button>
-                </span>
-
-                <span id="moretext-six" class="hidden"> skills, experience, and projects. The website is built using HTML,
-                   CSS, and JavaScript, and is designed to be responsive and mobile-friendly. 
+              <p class="text-left text-slate-700 font-base text-sm mb-8 ">
+                The Developer Interview Preparation App is a comprehensive mobile application designed specifically 
+                for junior frontend developers to sharpen their skills and prepare for interviews. With this app, 
+                you can confidently tackle interviews
               </p>
 
-              <span id="readless-six">
-                <button id="btn-readless-six" onclick="ToggleText('six')" class="hidden text-sky-600 text-sm underline ">Read less</button>
-              </span>
-
-              <div class="mt-4 mb-4 flex justify-evenly md:justify-between items-center"> 
-                <button>
-                  <a href="https://tevfikdev.dev/" target="_blank" class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >See Site</a>
-                </button> 
-
-                <button>
-                  <a href="https://github.com/TevfikSarlak/dev-website-project" target="_blank"
-                   class="bg-indigo-700 px-8 md:px-12 py-1 rounded-md text-white
-                  hover:bg-white hover:border-2 hover:border-indigo-700 hover:font-semibold hover:text-indigo-700 "
-                  >Source</a>
-                </button> 
+              <div class="flex flex-row justify-center items-center">
+                <button class="text-gray-50 bg-violet-700 px-12 py-2 rounded-lg mb-8 hover:-translate-y-1 hover:shadow-xl">
+                     View Project
+                </button>
               </div>
 
-              <p class="text-gray-600 text-xs">Tags: HTML5, CSS, Tailwindcss</p>
+              <p class="text-gray-600 text-xs">
+                <span class="font-bold underline">Tags:</span>
+                 HTML5, CSS, Tailwindcss, ReactJS
+              </p>
+
+            </div>
+             
+          </div>
+          
+
+          <!--Project5-->
+          <div class="bg-gray-200 rounded-lg shadow-xl w-80 md:w-96  mb-12 mx-auto">
+            <img src="/images/my-password-randomizer.PNG" class="mt-1 h-1/3 w-full rounded-t-md mb-4"/>
+            <div class="mx-2 leading-loose p-2 md:p-4 ">
+              <h2 class="text-lg font-medium mb-4">My-Password-Randomizer</h2>
+              
+             <p class="text-left text-slate-700 font-base text-sm mb-8 ">
+              My Password Randomizer is a useful application that allows you to generate secure and customizable 
+              passwords with ease. With this app, you can effortlessly create strong passwords tailored to your specific 
+              requirements.
+              </p>
+
+              <div class="flex flex-row justify-center items-center">
+                <button class="text-gray-50 bg-violet-700 px-12 py-2 rounded-lg mb-8 hover:-translate-y-1 hover:shadow-xl">
+                     View Project
+                </button>
+              </div>
+
+              <p class="text-gray-600 text-xs">
+                <span class="font-bold underline">Tags:</span>
+                 HTML5, CSS, Tailwindcss, Javascript
+              </p>
+            </div>
+             
+          </div>
+          
+
+          <!--Project6-->
+          <div class="bg-gray-200 rounded-lg shadow-xl w-80 md:w-96  mb-12 mx-auto">
+            <img src="/images/dev-website.PNG" class="mt-1 h-1/3 w-full rounded-t-md mb-4"/>
+            <div class="mx-2 leading-loose p-2 md:p-4 ">
+              <h2 class="text-lg font-medium mb-4">Dev-Portfolio-Website</h2>
+              
+              <p class="text-left text-slate-700 font-base text-sm mb-8 ">
+                Developer website is an innovative platform that empowers individuals to create their own stunning 
+                and personalized portfolio websites. With a collection of customizable templates, you can effortlessly 
+                build a professional online presence.
+              </p>
+
+              <div class="flex flex-row justify-center items-center">
+                <button class="text-gray-50 bg-violet-700 px-12 py-2 rounded-lg mb-8 hover:-translate-y-1 hover:shadow-xl">
+                     View Project
+                </button>
+              </div>
+
+              <p class="text-gray-600 text-xs">
+                <span class="font-bold underline">Tags:</span>
+                 HTML5, CSS, Tailwindcss, Javascript
+              </p>
             </div>
              
           </div>
@@ -571,143 +459,148 @@
 
     </section>
     
-    <!-- ContactMe Section -->
-    <section id="contact" class="bg-[url('/images/bg-two.svg')] bg-cover font-noto">
+   <!-- ContactMe Section -->
+    <section id="contact" class="bg-[url('/images/bg-contact.jpg')] bg-cover bg-center font-noto">
+      <div class="bg-opacity-50 bg-white mb-40 md:px-72 shadow-xl">
 
-      <div class="mb-60 py-24 md:flex md:flex-col md:justify-center md:mx-72">
+        <div class="py-24 md:flex md:flex-col md:justify-center">
+          <h1 class="text-center underline font-bold text-2xl mb-12 text-slate-700 underline-offset-8 decoration-violet-700 decoration-4">Contact Me</h1>
 
-        <h1 class="text-center underline font-bold text-2xl mb-12 text-slate-700">Contact Me</h1>
-
-        <form name="contact" method="POST" data-netfily="true" action="https://formspree.io/f/mrgvlldn" class="mx-4">
-          <input type="hidden" name="form-name" value="contact">
-          <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2" for="name" >
-              Name
-            </label>
-            <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
-             focus:ring-blue-600 focus:border-transparent" id="name" type="text" placeholder="Your Name" name="name">
-          </div>
-          <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2" type="email">
-              Email
-            </label>
-            <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
-            focus:ring-blue-600 focus:border-transparent" id="email" type="email" placeholder="Your Email" name="email">
-            </label>
-            
-          </div>
-          <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2" for="message">
-              Message
-            </label>
-            <textarea class="w-full md:max-w-xl h-36 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
-            focus:ring-blue-600 focus:border-transparent" name="message" id="message" placeholder="Your Message"></textarea>
-          </div>
-          <button type="submit" class="bg-indigo-700 hover:bg-indigo-400 text-white hover:text-gray-200 font-bold py-2 px-4 rounded-lg">
-            Send Message
-          </button>
-        </form>
+          <form name="contact" method="POST" data-netlify="true" action="https://formspree.io/f/mrgvlldn" class="mx-4">
+            <input type="hidden" name="form-name" value="contact">
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-2" for="name">
+                Name
+              </label>
+              <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-800 focus:border-transparent" id="name" type="text" placeholder="Your Name" name="name">
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-2" for="email">
+                Email
+              </label>
+              <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-800 focus:border-transparent" id="email" type="email" placeholder="Your Email" name="email">
+            </div>
+            <div class="mb-16">
+              <label class="block text-gray-700 font-bold mb-2" for="message">
+                Message
+              </label>
+              <textarea class="w-full md:max-w-xl h-36 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-800 focus:border-transparent" name="message" id="message" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="bg-violet-700 hover:-translate-y-1 hover:shadow-xl text-white  font-bold py-2 px-4 rounded-lg">
+              Send Message
+            </button>
+          </form>
+        </div>
 
       </div>
-
     </section>
+
 
     <!-- Footer Section -->
     <section>
-      <footer class="bg-gray-800 text-white font-noto">
+      <footer class="bg-gray-800 text-white font-noto pb-24">
         <div class="container mx-auto pt-12 px-5 pb-10">
           <!-- Flex Container For All Items -->
           <div
-            class="flex flex-col justify-between space-y-24 md:flex-row md:space-y-0"
+            class="flex flex-col"
           >
-            <!-- Email & Phone -->
-            <div class="mt-10 space-y-6">
-              <div class="flex items-center space-x-3 md:-mt-10">
-                <div class="w-6">
-                  <img src="images/icon-phone.svg" alt="" class="scale-10" />
+            <div class="flex flex-col justify-between space-y-24 md:flex-row md:space-y-0">
+              <!-- Email & Phone -->
+              <div class="mt-10 space-y-6">
+                <div class="flex items-center space-x-3 md:-mt-10">
+                  <div class="w-6">
+                    <img src="images/icon-phone.svg" alt="" class="scale-10" />
+                  </div>
+                  <a href="tel:+905054707777" class="text-white hover:underline">+90-505-470-7777</a>             
                 </div>
-                <a href="tel:+905054707777" class="text-white">+90-505-470-7777</a>             
-              </div>
-              <div class="flex items-center space-x-3">
-                <div class="w-6">
-                  <img src="images/icon-email.svg" alt="" class="scale-10" />
+                <div class="flex items-center space-x-3">
+                  <div class="w-6">
+                    <img src="images/icon-email.svg" alt="" class="scale-10" />
+                  </div>
+                  <a href="mailto:tevfiksarlak@gmail.com" class="text-white hover:underline">tevfiksarlak@gmail.com</a>
                 </div>
-                <a href="mailto:tevfiksarlak@gmail.com" class="text-white">tevfiksarlak@gmail.com</a>
               </div>
+              <!-- Social Media Icons -->
+              <div class="flex flex-col">
+                <div class="flex flex-row justify-center pb-10 space-x-3">
+                
+                  <div class="">
+                    <a href="https://twitter.com/tevfiksarlak">
+                      <img
+                        src="images/twitter.svg"
+                        alt=""
+                        class="p-2 bg-white rounded-full ficon hover:bg-blue-500"
+                      />
+                    </a>
+                  </div>
+
+                  <div>
+                    <a href="https://www.facebook.com/tevfik.sarlak">
+                      <img
+                        src="images/facebook.svg"
+                        alt=""
+                        class="p-2 bg-white rounded-full ficon hover:bg-blue-700"
+                      />
+                    </a>
+                  </div>
+
+                  <div >
+                    <a href="https://github.com/TevfikSarlak">
+                      <img
+                        src="images/github.svg"
+                        alt=""
+                        class="p-2 bg-white rounded-full ficon hover:bg-purple-800"
+                      />
+                    </a>
+                  </div>
+
+                  <div >
+                    <a href="https://discord.com/channels/TeFo#5095">
+                      <img
+                        src="images/discord.svg"
+                        alt=""
+                        class="p-2 bg-white rounded-full ficon hover:bg-blue-900"
+                      />
+                    </a>
+                  </div>
+
+                  <div >
+                    <a href="https://medium.com/@tevfiksarlak">
+                      <img
+                        src="images/medium.svg"
+                        alt=""
+                        class="p-2 bg-white rounded-full ficon hover:bg-green-500"
+                      />
+                    </a>
+                  </div>
+
+                  <div >
+                    <a href="https://www.linkedin.com/in/tevfik-%C5%9Farlak-25854a135/">
+                      <img
+                        src="images/linkedin.svg"
+                        alt=""
+                        class="p-2 bg-white rounded-full ficon hover:bg-blue-700"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="text-sm text-white text-center justify-center items-center">
+                  <p>
+                    &copy; 2022 
+                    <span>
+                      <a href="#home" class="underline hover:text-violet-400">
+                        Tevfik Sarlak
+                      </a>
+                    </span>
+                    . All Rights Reserved.
+                  </p>
+                </div>
+
             </div>
-            <!-- Social Media Icons -->
-            <div class="flex justify-center pb-10 space-x-3">
-             
-              <div class="">
-                <a href="https://twitter.com/tevfiksarlak">
-                  <img
-                    src="images/twitter.svg"
-                    alt=""
-                    class="p-2 bg-white rounded-full ficon hover:bg-blue-500"
-                  />
-                </a>
-              </div>
-
-              <div>
-                <a href="https://www.facebook.com/tevfik.sarlak">
-                  <img
-                    src="images/facebook.svg"
-                    alt=""
-                    class="p-2 bg-white rounded-full ficon hover:bg-blue-700"
-                  />
-                </a>
-              </div>
-
-              <div >
-                <a href="https://github.com/TevfikSarlak">
-                  <img
-                    src="images/github.svg"
-                    alt=""
-                    class="p-2 bg-white rounded-full ficon hover:bg-purple-800"
-                  />
-                </a>
-              </div>
-
-              <div >
-                <a href="https://discord.com/channels/TeFo#5095">
-                  <img
-                    src="images/discord.svg"
-                    alt=""
-                    class="p-2 bg-white rounded-full ficon hover:bg-blue-900"
-                  />
-                </a>
-              </div>
-
-              <div >
-                <a href="https://medium.com/@tevfiksarlak">
-                  <img
-                    src="images/medium.svg"
-                    alt=""
-                    class="p-2 bg-white rounded-full ficon hover:bg-green-500"
-                  />
-                </a>
-              </div>
-
-              <div >
-                <a href="https://www.linkedin.com/in/tevfik-%C5%9Farlak-25854a135/">
-                  <img
-                    src="images/linkedin.svg"
-                    alt=""
-                    class="p-2 bg-white rounded-full ficon hover:bg-blue-700"
-                  />
-                </a>
-              </div>
-
-              
-            </div>
-
-              
-      
+          </div>
+ 
     </section>
-
-
-
-    
-    
+ 
 </body>
 </html>

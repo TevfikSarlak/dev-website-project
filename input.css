@@ -66,11 +66,6 @@
   }
 }
 
-/*Background Image Changer transition utilities*/
-@layer utilities {
-
-    .transition-bg-image {
-        transition-property: background-image;
-        transition-duration: 1s;
-        transition-timing-function: ease;
-  }
+.filter-grayscale:hover {
+  filter: grayscale(0);
+}
